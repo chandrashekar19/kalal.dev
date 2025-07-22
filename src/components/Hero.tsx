@@ -39,14 +39,19 @@ const Hero = () => {
 
   return (
     <section 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(135deg, rgba(108, 99, 255, 0.9), rgba(56, 189, 248, 0.8)), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-accent/20"
     >
+      {/* Background overlay for better text contrast */}
+      <div 
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background/80 to-accent/10" />
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-32 h-32 bg-primary/20 rounded-full animate-float"></div>
