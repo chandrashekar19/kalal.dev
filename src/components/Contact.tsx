@@ -1,18 +1,26 @@
-import { useState, useEffect, useRef } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { useState, useEffect, useRef } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -23,10 +31,10 @@ const Contact = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const elements = entry.target.querySelectorAll('.scroll-animate');
+            const elements = entry.target.querySelectorAll(".scroll-animate");
             elements.forEach((el, index) => {
               setTimeout(() => {
-                el.classList.add('in-view');
+                el.classList.add("in-view");
               }, index * 200);
             });
           }
@@ -42,11 +50,13 @@ const Contact = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -60,7 +70,7 @@ const Contact = () => {
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon!",
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ name: "", email: "", subject: "", message: "" });
       setIsSubmitting(false);
     }, 1000);
   };
@@ -69,42 +79,42 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "alex.johnson@email.com",
-      link: "mailto:alex.johnson@email.com"
+      content: "chandra.kalal1901@gmail.com",
+      link: "mailto:chandra.kalal1901@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      content: "+91 9963820050",
+      link: "tel:+919963820050",
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "San Francisco, CA",
-      link: "#"
-    }
+      content: "Hyderabad, Telangana, India",
+      link: "#",
+    },
   ];
 
   const socialLinks = [
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com",
-      color: "hover:text-foreground"
+      url: "https://github.com/chandrashekar19",
+      color: "hover:text-foreground",
     },
     {
       icon: Linkedin,
-      name: "LinkedIn", 
-      url: "https://linkedin.com",
-      color: "hover:text-blue-500"
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/chandrashekar19/",
+      color: "hover:text-blue-500",
     },
-    {
-      icon: Twitter,
-      name: "Twitter",
-      url: "https://twitter.com",
-      color: "hover:text-blue-400"
-    }
+    // {
+    //   icon: Twitter,
+    //   name: "Twitter",
+    //   url: "https://twitter.com",
+    //   color: "hover:text-blue-400",
+    // },
   ];
 
   return (
@@ -127,8 +137,9 @@ const Contact = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
                   <p className="text-muted-foreground mb-8 leading-relaxed">
-                    I'm always interested in hearing about new opportunities, interesting projects, 
-                    or just having a chat about technology and development. Feel free to reach out!
+                    I'm always interested in hearing about new opportunities,
+                    interesting projects, or just having a chat about technology
+                    and development. Feel free to reach out!
                   </p>
 
                   <div className="space-y-6 mb-8">
@@ -139,8 +150,8 @@ const Contact = () => {
                         </div>
                         <div>
                           <p className="font-medium">{info.title}</p>
-                          <a 
-                            href={info.link} 
+                          <a
+                            href={info.link}
                             className="text-muted-foreground hover:text-primary transition-colors"
                           >
                             {info.content}
@@ -232,8 +243,8 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button 
-                      type="submit" 
+                    <Button
+                      type="submit"
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary"
                       disabled={isSubmitting}
                     >

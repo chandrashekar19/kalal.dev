@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,22 +7,22 @@ const Footer = () => {
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/chandrashekar19",
     },
     {
       icon: Linkedin,
-      name: "LinkedIn", 
-      url: "https://linkedin.com",
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/chandrashekar19/",
     },
     {
       icon: Mail,
       name: "Email",
-      url: "mailto:alex.johnson@email.com",
-    }
+      url: "mailto:chandra.kalal1901@gmail.com",
+    },
   ];
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -30,16 +30,17 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="text-center">
           {/* Logo */}
-          <button 
+          <button
             onClick={scrollToTop}
             className="text-3xl font-bold gradient-text hover:scale-105 transition-transform mb-6 inline-block"
           >
-            Alex Johnson
+            Chandrashekar kalal
           </button>
 
           {/* Quote */}
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            "Code is like humor. When you have to explain it, it's bad." - Cory House
+            "Code is like humor. When you have to explain it, it's bad." - Cory
+            House
           </p>
 
           {/* Social Links */}
@@ -61,9 +62,9 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-border pt-8">
             <p className="text-muted-foreground flex items-center justify-center gap-2">
-              © {currentYear} Alex Johnson. Made with 
-              <Heart className="h-4 w-4 text-red-500 fill-current" /> 
-              and lots of coffee.
+              © {currentYear} Chandrashekar kalal. Made with
+              <Heart className="h-4 w-4 text-red-500 fill-current" />
+              and passion for coding.
             </p>
           </div>
         </div>
