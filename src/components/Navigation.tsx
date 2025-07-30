@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,43 +12,43 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Experience", href: "#experience" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMobileMenuOpen(false);
   };
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-background/80 backdrop-blur-md border-b border-border' 
-          : 'bg-transparent'
+        isScrolled
+          ? "bg-background/80 backdrop-blur-md border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <button 
-            onClick={() => scrollToSection('#home')}
+          <button
+            onClick={() => scrollToSection("#home")}
             className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
           >
-            AJ
+            CK
           </button>
 
           {/* Desktop Navigation */}
@@ -68,8 +68,8 @@ const Navigation = () => {
           {/* Theme Toggle & CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
-            <Button 
-              onClick={() => scrollToSection('#contact')}
+            <Button
+              onClick={() => scrollToSection("#contact")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary"
             >
               Let's Talk
@@ -81,7 +81,11 @@ const Navigation = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
 
@@ -100,8 +104,8 @@ const Navigation = () => {
               ))}
               <div className="flex items-center space-x-4 pt-4">
                 <ThemeToggle />
-                <Button 
-                  onClick={() => scrollToSection('#contact')}
+                <Button
+                  onClick={() => scrollToSection("#contact")}
                   className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary"
                 >
                   Let's Talk
