@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Calendar, MapPin, Building } from 'lucide-react';
+import { useEffect, useRef } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Calendar, MapPin, Building } from "lucide-react";
 
 const Experience = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -11,10 +11,10 @@ const Experience = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const elements = entry.target.querySelectorAll('.scroll-animate');
+            const elements = entry.target.querySelectorAll(".scroll-animate");
             elements.forEach((el, index) => {
               setTimeout(() => {
-                el.classList.add('in-view');
+                el.classList.add("in-view");
               }, index * 200);
             });
           }
@@ -33,49 +33,76 @@ const Experience = () => {
   const experiences = [
     {
       title: "Frontend Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "Jan 2023 - Present",
-      type: "Full-time",
-      description: "Lead frontend development for multiple client projects, specializing in React and TypeScript applications. Collaborate with cross-functional teams to deliver high-quality user experiences.",
+      company: "Consultant - (rayvector technologies)",
+      location: "Banglore , India",
+      period: "June 2024 - Present",
+      type: "Contract",
+      description: "",
       achievements: [
-        "Increased application performance by 40% through optimization techniques",
-        "Led migration from JavaScript to TypeScript for 3 major projects",
-        "Mentored 2 junior developers and conducted code reviews",
-        "Implemented responsive design systems used across 5+ projects"
+        "Engineered interactive GIS features using React and Google Maps API for enhanced map usability.",
+        "Integrated KML layers to display custom geospatial data on maps",
+        "Added Google Street View to support detailed land-use and location insights.",
+        "Built interactive dashboards to help clients make better real-time decisions with visualized map data",
       ],
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Redux", "Jest"]
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Next.js",
+        "Zustand",
+        "Google Maps API",
+        "Bootstrap",
+        "Material-UI",
+        "KML",
+      ],
     },
     {
-      title: "Junior React Developer",
-      company: "StartupHub Inc.",
-      location: "San Francisco, CA", 
+      title: "React Developer",
+      company: "Infinity Learn.",
+      location: "Hyderabad, Telangana",
       period: "Jun 2022 - Dec 2022",
       type: "Full-time",
-      description: "Developed and maintained React components for a B2B SaaS platform. Worked closely with designers to implement pixel-perfect UI components and improve user experience.",
+      description: "",
       achievements: [
-        "Built reusable component library used by entire development team",
-        "Reduced bug reports by 30% through comprehensive testing",
-        "Contributed to 15+ feature releases in 6 months",
-        "Improved code coverage from 60% to 85%"
+        "Improved login and OTP flow using Formik, Yup, and React Query, reducing failure rates by 40%.",
+        "Ensured full mobile responsiveness for a high-traffic student-focused platform.",
+        "Took a short professional break for personal reasons while actively contributing to side projects.",
+        "Continued improving frontend skills through hands-on practice with React and JavaScript.",
       ],
-      technologies: ["React", "JavaScript", "CSS3", "Material-UI", "Git", "Figma"]
+      technologies: [
+        "React",
+        "JavaScript",
+        "CSS3",
+        "Material-UI",
+        "Git",
+        "Figma",
+      ],
     },
     {
-      title: "Frontend Developer Intern",
-      company: "WebDev Agency",
-      location: "Remote",
+      title: "UI Engineer",
+      company: "Banyan Cloud",
+      location: "Banglore, India",
       period: "Jan 2022 - May 2022",
-      type: "Internship",
-      description: "Assisted in developing responsive websites for small businesses. Gained hands-on experience with modern web technologies and agile development practices.",
+      type: "Full Time",
+      description: "",
       achievements: [
-        "Delivered 8 client websites with 100% on-time completion",
-        "Improved page load speeds by 25% through image optimization",
-        "Learned and applied SEO best practices",
-        "Participated in daily standups and sprint planning"
+        "Assisted in developing admin dashboards with CRUD operations using React and Redux to support internal workflows.",
+        "Contributed to building reusable components and implemented basic code splitting for better maintainability.",
+        "Used Storybook to develop and test UI components, helping maintain design consistency.",
+        "Gained hands-on experience with JavaScript, focusing on clean and scalable frontend practices.",
       ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "React", "WordPress", "Bootstrap"]
-    }
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React",
+        "Redux",
+        "Formik",
+        "Yup",
+        "Storybook",
+        "Bootstrap",
+      ],
+    },
   ];
 
   return (
@@ -100,16 +127,20 @@ const Experience = () => {
                 <div key={index} className="relative scroll-animate">
                   {/* Timeline dot */}
                   <div className="absolute left-6 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background hidden md:block shadow-glow"></div>
-                  
+
                   <Card className="card-glow bg-card border-border md:ml-16">
                     <CardContent className="p-8">
                       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
                         <div>
-                          <h3 className="text-2xl font-bold mb-2">{experience.title}</h3>
+                          <h3 className="text-2xl font-bold mb-2">
+                            {experience.title}
+                          </h3>
                           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground mb-4">
                             <div className="flex items-center">
                               <Building className="h-4 w-4 mr-2" />
-                              <span className="font-medium">{experience.company}</span>
+                              <span className="font-medium">
+                                {experience.company}
+                              </span>
                             </div>
                             <div className="flex items-center">
                               <MapPin className="h-4 w-4 mr-2" />
@@ -121,8 +152,8 @@ const Experience = () => {
                             </div>
                           </div>
                         </div>
-                        <Badge 
-                          variant="secondary" 
+                        <Badge
+                          variant="secondary"
                           className="bg-primary/10 text-primary w-fit"
                         >
                           {experience.type}
@@ -134,24 +165,35 @@ const Experience = () => {
                       </p>
 
                       <div className="mb-6">
-                        <h4 className="text-lg font-semibold mb-3">Key Achievements:</h4>
+                        <h4 className="text-lg font-semibold mb-3">
+                          Key Achievements:
+                        </h4>
                         <ul className="space-y-2">
-                          {experience.achievements.map((achievement, achievementIndex) => (
-                            <li key={achievementIndex} className="flex items-start">
-                              <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                              <span className="text-muted-foreground">{achievement}</span>
-                            </li>
-                          ))}
+                          {experience.achievements.map(
+                            (achievement, achievementIndex) => (
+                              <li
+                                key={achievementIndex}
+                                className="flex items-start"
+                              >
+                                <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span className="text-muted-foreground">
+                                  {achievement}
+                                </span>
+                              </li>
+                            )
+                          )}
                         </ul>
                       </div>
 
                       <div>
-                        <h4 className="text-lg font-semibold mb-3">Technologies Used:</h4>
+                        <h4 className="text-lg font-semibold mb-3">
+                          Technologies Used:
+                        </h4>
                         <div className="flex flex-wrap gap-2">
                           {experience.technologies.map((tech) => (
-                            <Badge 
-                              key={tech} 
-                              variant="outline" 
+                            <Badge
+                              key={tech}
+                              variant="outline"
                               className="border-primary/20 text-primary bg-primary/5"
                             >
                               {tech}
