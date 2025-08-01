@@ -60,7 +60,7 @@ const Experience = () => {
       title: "React Developer",
       company: "Infinity Learn.",
       location: "Hyderabad, Telangana",
-      period: "Jun 2022 - Dec 2022",
+      period: "Jun 2023 - Dec 2023",
       type: "Full-time",
       description: "",
       achievements: [
@@ -82,7 +82,7 @@ const Experience = () => {
       title: "UI Engineer",
       company: "Banyan Cloud",
       location: "Banglore, India",
-      period: "Jan 2022 - May 2022",
+      period: "May 2022 - Mar 2023",
       type: "Full Time",
       description: "",
       achievements: [
