@@ -36,7 +36,7 @@ const Projects = () => {
       title: "Business Analytics Dashboard",
       description:
         "A responsive and performance-focused admin dashboard for tracking business KPIs, visualizing analytics, and managing users and activity data. Built with a focus on speed, usability, and real-time insights.",
-      image: "/images/business.png",
+      image: "/images/buisness.png",
       technologies: [
         "React",
         "Zustand",
@@ -59,7 +59,6 @@ const Projects = () => {
       githubUrl: "https://github.com/chandrashekar19/nimble-boards",
       featured: true,
     },
-
     {
       title: "Job Tracker & Resume Builder",
       description:
@@ -69,23 +68,44 @@ const Projects = () => {
         "React",
         "Zustand",
         "Tailwind CSS",
-        "OpenAI API",
+        // "OpenAI API",
         "html2pdf",
       ],
       liveUrl: "https://apply-and-build.vercel.app/",
       githubUrl: "https://github.com/chandrashekar19/apply-and-build",
       featured: true,
     },
-
     {
-      title: "Chat Application",
+      title: "Snapgram",
       description:
-        "Real-time chat application with group messaging, file sharing, and emoji reactions built with modern web technologies.",
-      image:
-        "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=300&fit=crop",
-      technologies: ["React", "Socket.io", "Express.js", "JWT", "PostgreSQL"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+        "A modern social media app with a native mobile feel, infinite scroll, and smooth performance. Built using React, TypeScript, Appwrite, and React Query for real-time updates and seamless UX.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Appwrite",
+        "Tailwind CSS",
+        "React Query",
+      ],
+      image: "/images/snapgram.png",
+      liveUrl: "https://snapgram-orcin-nu.vercel.app/",
+      githubUrl: "https://github.com/chandrashekar19/social-media-app",
+      featured: true,
+    },
+    {
+      title: "Chatter fusion",
+      description:
+        "A real-time chat application built using React, Tailwind CSS, Zustand, and Socket.IO. Users can join rooms and send messages instantly.",
+      technologies: [
+        "React js",
+        "JavaScript",
+        "tailwind css",
+        "node js",
+        "zustand",
+        "socket.io",
+      ],
+      image: "images/chatter.png",
+      liveUrl: "https://chatter-stream.vercel.app/",
+      githubUrl: "https://github.com/chandrashekar19/chatter-fusion",
       featured: false,
     },
   ];
