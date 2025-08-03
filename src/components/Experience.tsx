@@ -91,6 +91,7 @@ const Experience = () => {
         "Used Storybook to develop and test UI components, helping maintain design consistency.",
         "Gained hands-on experience with JavaScript, focusing on clean and scalable frontend practices.",
       ],
+      
       technologies: [
         "HTML5",
         "CSS3",

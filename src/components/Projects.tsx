@@ -44,8 +44,8 @@ const Projects = () => {
         "Recharts",
         "JWT Auth",
       ],
-      liveUrl: "https://your-live-link.com",
-      githubUrl: "https://github.com/your-repo-business-dashboard",
+      liveUrl: "https://biz-command.vercel.app/",
+      githubUrl: "https://github.com/chandrashekar19/biz-command",
       featured: true,
     },
 
