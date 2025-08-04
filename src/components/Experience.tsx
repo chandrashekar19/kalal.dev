@@ -33,15 +33,15 @@ const Experience = () => {
   const experiences = [
     {
       title: "Frontend Developer",
-      company: "Consultant - (rayvector technologies)",
+      company: "Rayvector Technologies & Freelance Clients",
       location: "Banglore , India",
-      period: "June 2024 - Present",
+      period: "Feb 2024 - Present",
       type: "Contract",
       description: "",
       achievements: [
-        "Engineered interactive GIS features using React and Google Maps API for enhanced map usability.",
-        "Integrated KML layers to display custom geospatial data on maps",
-        "Added Google Street View to support detailed land-use and location insights.",
+        "Built responsive marketing websites for a digital agency using React, Tailwind CSS and typescript.",
+        "Contributed to  GIS dashboards with interactive map layers using Google Maps API, Street View, and KML integration",
+        "Designed reusable components for data visualization and real-time insights.",
         "Built interactive dashboards to help clients make better real-time decisions with visualized map data",
       ],
       technologies: [
@@ -91,7 +91,7 @@ const Experience = () => {
         "Used Storybook to develop and test UI components, helping maintain design consistency.",
         "Gained hands-on experience with JavaScript, focusing on clean and scalable frontend practices.",
       ],
-      
+
       technologies: [
         "HTML5",
         "CSS3",
