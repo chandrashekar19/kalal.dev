@@ -52,7 +52,7 @@ const Projects = () => {
     {
       title: "Task Manager",
       description:
-        "A real-time Kanban-style task management app with drag-and-drop boards, live sync via Firebase, and offline persistence using Redux. Designed for teams to collaborate and organize work visually.",
+        "A real-time Kanban-style task management app with drag-and-drop boards and offline persistence using Redux. Designed for teams to collaborate and organize work visually.",
       image: "/images/task-board.png",
       technologies: ["React", "Redux", "Firebase", "Tailwind CSS", "dnd-kit"],
       liveUrl: "https://nimble-boards.vercel.app/",
@@ -62,7 +62,7 @@ const Projects = () => {
     {
       title: "Job Tracker & Resume Builder",
       description:
-        "An all-in-one job application tracker with resume builder and AI-powered cover letter generator. Built to help job seekers manage applications and create personalized career documents efficiently.",
+        "An all-in-one job application tracker with resume builder and cover letter generator. Built to help job seekers manage applications and create personalized career documents efficiently.",
       image: "/images/Job-board.png",
       technologies: [
         "React",
