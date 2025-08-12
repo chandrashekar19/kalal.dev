@@ -60,8 +60,8 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-border pt-8">
-            <p className="text-muted-foreground flex items-center justify-center gap-2">
+          <div className="border-t border-border pt-6 sm:pt-8">
+            <p className="text-muted-foreground flex felx-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-center px-2">
               © {currentYear} Chandrashekar kalal. Made with
               <Heart className="h-4 w-4 text-red-500 fill-current" />
               and passion for coding.
