@@ -61,7 +61,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="border-t border-border pt-6 sm:pt-8">
-            <p className="text-sm sm:text-sm text-muted-foreground flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-center px-2">
+            <p className="text-lg text-muted-foreground flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-center px-2">
               © {currentYear} Chandrashekar kalal.{" "}
               <span className="flex items-center gap-1">
                 Made with
