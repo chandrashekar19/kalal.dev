@@ -73,7 +73,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in-up">
-          <h1 className="text-6xl md:text-8xl sm:text-3xl font-bold mb-6">
+          <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold mb-6">
             <span className="block text-foreground">Hello, I'm</span>
             <span className="block gradient-text">Chandrashekar kalal</span>
           </h1>
