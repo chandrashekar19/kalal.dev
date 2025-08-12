@@ -61,10 +61,13 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="border-t border-border pt-6 sm:pt-8">
-            <p className="text-muted-foreground flex felx-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-center px-2">
-              © {currentYear} Chandrashekar kalal. Made with
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              and passion for coding.
+            <p className="text-xs sm:text-sm text-muted-foreground flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-center px-2">
+              © {currentYear} Chandrashekar kalal.{" "}
+              <span className="flex items-center gap-1">
+                Made with
+                <Heart className="h-3 w-3 sm:h-4 sm:w-4 text-red-500 fill-current" />
+                and passion for coding.
+              </span>
             </p>
           </div>
         </div>

@@ -65,7 +65,7 @@ const About = () => {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground scroll-animate">
-              Passionate developer with 2+ years of experience crafting digital
+              Passionate developer with 3 years of experience crafting digital
               experiences
             </p>
           </div>
@@ -79,17 +79,6 @@ const About = () => {
                 passion for creating seamless user experiences through clean,
                 efficient code.
               </p>
-              {/* <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I specialize in React, TypeScript, and modern frontend
-                frameworks, with experience in full-stack development. I love
-                staying up-to-date with the latest technologies and best
-                practices to deliver exceptional results.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
-              </p> */}
             </div>
 
             <div className="scroll-animate">
@@ -101,7 +90,7 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Experience:</span>
-                      <span className="font-semibold">2+ Years</span>
+                      <span className="font-semibold">3 Years</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Location:</span>
