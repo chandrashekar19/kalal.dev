@@ -73,7 +73,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="scroll-animate">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm a dedicated React developer with over 2 years of experience
+                I'm a dedicated React developer with 3 years of experience
                 building modern web applications. My journey started with a
                 fascination for how websites work, and it's evolved into a
                 passion for creating seamless user experiences through clean,
