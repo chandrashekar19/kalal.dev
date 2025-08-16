@@ -107,8 +107,8 @@ const About = () => {
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Interests:</span>
                       <span className="font-semibold">
-                        Frontend Engineering · React & Next.js · Scalable Web
-                        Applications · UI/UX Design
+                        React & Next.js · Scalable WebApplications · UI/UX
+                        Design
                       </span>
                     </div>
                   </div>
