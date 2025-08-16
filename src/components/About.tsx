@@ -65,7 +65,7 @@ const About = () => {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground scroll-animate">
-              Passionate developer with 3 years of experience crafting digital
+              Passionate developer with 3+ years of experience crafting digital
               experiences
             </p>
           </div>
@@ -73,7 +73,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="scroll-animate">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm a dedicated React developer with 3 years of experience
+                I'm a dedicated React developer with 3+ years of experience
                 building modern web applications. My journey started with a
                 fascination for how websites work, and it's evolved into a
                 passion for creating seamless user experiences through clean,
@@ -90,7 +90,7 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Experience:</span>
-                      <span className="font-semibold">3 Years</span>
+                      <span className="font-semibold">3+ Years</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Location:</span>
@@ -106,7 +106,10 @@ const About = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Interests:</span>
-                      <span className="font-semibold">AI and Open Source</span>
+                      <span className="font-semibold">
+                        Frontend Engineering · React & Next.js · Scalable Web
+                        Applications · UI/UX Design
+                      </span>
                     </div>
                   </div>
                 </CardContent>
