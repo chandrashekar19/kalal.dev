@@ -87,7 +87,7 @@ const About = () => {
                   <h3 className="text-2xl font-bold mb-6 text-center">
                     Quick Facts
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Experience:</span>
                       <span className="font-semibold">3+ Years</span>
@@ -107,7 +107,7 @@ const About = () => {
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Interests:</span>
                       <span className="font-semibold">
-                        React & Next.js · Scalable WebApplications · UI/UX
+                        React & Next.js , UI/UX
                         Design
                       </span>
                     </div>
