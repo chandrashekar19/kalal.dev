@@ -107,7 +107,7 @@ const About = () => {
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Interests:</span>
                       <span className="font-semibold">
-                        React & Next.js and Open Source.
+                        AI & Open Source.
                       </span>
                     </div>
                   </div>
