@@ -54,7 +54,7 @@ const Projects = () => {
       description:
         "A real-time Kanban-style task management app with drag-and-drop boards and offline persistence using Redux. Designed for teams to collaborate and organize work visually.",
       image: "/images/task-board.png",
-      technologies: ["React", "Redux", "Firebase", "Tailwind CSS", "dnd-kit"],
+      technologies: ["React", "zustand", "Tailwind CSS", "dnd-kit"],
       liveUrl: "https://nimble-boards.vercel.app/",
       githubUrl: "https://github.com/chandrashekar19/nimble-boards",
       featured: true,
