@@ -57,7 +57,7 @@
         "shadcn"
       ],
       image: "/images/snapgram.png",
-      liveUrl: "https://snapgram-orcin-nu.vercel.app/",
+      liveUrl: "https://snap-world.vercel.app/",
       githubUrl: "https://github.com/chandrashekar19/social-media-app",
       featured: true,
     },
