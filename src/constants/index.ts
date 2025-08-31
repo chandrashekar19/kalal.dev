@@ -106,7 +106,7 @@
         "shadcn"
       ],
       image: "images/blogs.png",
-      liveUrl: "https://kalal-dev-blogs.vercel.app/blog",
+      liveUrl: "https://kalal-dev-blogs.vercel.app",
       githubUrl: "https://github.com/chandrashekar19/kalal.dev-blogs",
       featured: false,
     },
