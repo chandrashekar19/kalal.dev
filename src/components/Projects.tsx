@@ -42,6 +42,7 @@ const Projects = () => {
         "Zustand",
         "Tailwind CSS",
         "Recharts",
+        "shadcn",
         "JWT Auth",
       ],
       liveUrl: "https://biz-command.vercel.app/",
@@ -68,7 +69,7 @@ const Projects = () => {
         "React",
         "Zustand",
         "Tailwind CSS",
-        // "OpenAI API",
+        "shadcn",
         "html2pdf",
       ],
       liveUrl: "https://apply-and-build.vercel.app/",
@@ -85,13 +86,14 @@ const Projects = () => {
         "Appwrite",
         "Tailwind CSS",
         "React Query",
+        "shadcn"
       ],
       image: "/images/snapgram.png",
       liveUrl: "https://snapgram-orcin-nu.vercel.app/",
       githubUrl: "https://github.com/chandrashekar19/social-media-app",
       featured: true,
     },
-    {
+     {
       title: "Chatter fusion",
       description:
         "A real-time chat application built using React, Tailwind CSS, Zustand, and Socket.IO. Users can join rooms and send messages instantly.",
@@ -106,6 +108,53 @@ const Projects = () => {
       image: "images/chatter.png",
       liveUrl: "https://chatter-stream.vercel.app/",
       githubUrl: "https://github.com/chandrashekar19/chatter-fusion",
+      featured: false,
+    },
+     {
+      title: "Health Care Application",
+      description:
+        "A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments",
+      technologies: [
+        "Next js",
+        "Typescript",
+        "tailwind css",
+        "React Query",
+        "Appwrite",
+        "shadcn"
+      ],
+      image: "images/chatter.png",
+      liveUrl: "https://health-care-amber.vercel.app/",
+      githubUrl: "https://github.com/chandrashekar19/health-care",
+      featured: false,
+    },
+    {
+        title: "Blogs Website",
+      description:
+        "A modern, responsive tech blog application built with React, TypeScript, and Tailwind CSS with category filtering, search functionality, and beautiful code syntax highlighting",
+      technologies: [
+        "React js",
+        "Typescript",
+        "markdown", 
+        "shadcn"
+      ],
+      image: "images/chatter.png",
+      liveUrl: "https://kalal-dev-blogs.vercel.app/blog",
+      githubUrl: "https://github.com/chandrashekar19/kalal.dev-blogs",
+      featured: false,
+    },
+     {
+        title: "Auth Explorer",
+      description:
+        "An educational resource designed to help developers understand modern authentication concepts like **OAuth 2.0** and **JWT (JSON Web Tokens)** with interactive examples and visual guides.",
+      technologies: [
+        "React js",
+        "Typescript",
+        "tailwind css", 
+        "shadcn"     
+      ],
+      image: "images/chatter.png",
+      liveUrl: "https://auth-explorer.vercel.app/",
+      githubUrl: "https://github.com/chandrashekar19/kalal.dev-blogs",
       featured: false,
     },
   ];
