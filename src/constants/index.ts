@@ -44,23 +44,23 @@
       githubUrl: "https://github.com/chandrashekar19/apply-and-build",
       featured: true,
     },
-    {
-      title: "Snapgram",
-      description:
-        "A modern social media app with a native mobile feel, infinite scroll, and smooth performance. Built using React, TypeScript, Appwrite, and React Query for real-time updates and seamless UX.",
-      technologies: [
-        "React",
-        "TypeScript",
-        "Appwrite",
-        "Tailwind CSS",
-        "React Query",
-        "shadcn"
-      ],
-      image: "/images/snapgram.png",
-      liveUrl: "https://snap-world.vercel.app/",
-      githubUrl: "https://github.com/chandrashekar19/social-media-app",
-      featured: true,
-    },
+    // {
+    //   title: "Snapgram",
+    //   description:
+    //     "A modern social media app with a native mobile feel, infinite scroll, and smooth performance. Built using React, TypeScript, Appwrite, and React Query for real-time updates and seamless UX.",
+    //   technologies: [
+    //     "React",
+    //     "TypeScript",
+    //     "Appwrite",
+    //     "Tailwind CSS",
+    //     "React Query",
+    //     "shadcn"
+    //   ],
+    //   image: "/images/snapgram.png",
+    //   liveUrl: "https://snap-world.vercel.app/",
+    //   githubUrl: "https://github.com/chandrashekar19/social-media-app",
+    //   featured: true,
+    // },
      {
       title: "Chatter fusion",
       description:
